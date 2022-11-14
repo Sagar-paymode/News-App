@@ -1,0 +1,33 @@
+Props drilling  -   Prop drilling refers to the process of sending props from a higher-level 
+                    component to a lower-level component. 
+
+                -   Prop drilling is basically a situation when the same data is being sent at 
+                    almost every level due to requirements in the final level.
+
+Disadvantage    -   The problem with Prop Drilling is that whenever data from the Parent component 
+                    will be needed, it would have to come from each level,
+
+                -   A better alternative to this is using useContext hook.
+
+
+===============================================================================
+Context API     -   The React Context API is a way for a React app to effectively produce global 
+                    variables that can be passed around. 
+
+                -   React Context API allows you to easily access data at different levels of the
+                    component tree without passing props to every level
+
+                -   It's a way to pass data deeply throughout your app without having manually pass 
+                    props down trough multiple levels. It can be a good alternative to tools like 
+                    Redux when all you need to do is pass data around.
+
+
+Step1-
+    createContext() - first we need to create context(state)
+
+Step2-
+    provider - you need a provider to provide data 
+
+Step3- 
+    consumer - you need a consumer 
+

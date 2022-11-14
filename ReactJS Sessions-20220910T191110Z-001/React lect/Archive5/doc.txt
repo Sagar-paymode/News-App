@@ -1,0 +1,13 @@
+useReducer() -  The useReducer Hook is similar to the useState Hook. It allows for custom state logic.
+            -   The useReducer Hook returns the current state and a dispatch method.
+            -   The useReducer Hook is used to store and update states, just like the useState Hook. 
+                It accepts a reducer function as its first parameter and the initial state as the second.
+            -   The useReducer Hook accepts two arguments. useReducer(<reducer>, <initialState>) 
+                The reducer function contains your custom state logic and the initialState can be a 
+                simple value but generally will contain an object.
+
+            -   useReducer is usually preferable to useState when you have complex state logic 
+                that involves multiple sub-values or when the next state depends on the previous one. 
+            -   useReducer also lets you optimize performance for components that trigger deep 
+                updates because you can pass dispatch down instead of callbacks.
+        const [state, dispatch] = useReducer(reducer, initialArg);
